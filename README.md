@@ -17,7 +17,7 @@ This Terraform module creates structured labels for Azure resources with specifi
 
 ```hcl
     module "labels" {
-      source        = "git::https://github.com/yadavprakash/terraform-azure-labels.git?ref=v1.0.0"  # Update with the correct path to the module
+      source        = "git::https://github.com/yadavprakash/terraform-azure-labels.git"  # Update with the correct path to the module
       name          = "app"
       environment   = "test"
       label_order   = ["name", "environment"]
